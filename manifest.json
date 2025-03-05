@@ -1,0 +1,15 @@
+{
+  "name": "Sobrum Helper",
+  "description": "Base Level Extension",
+  "version": "0.0.1",
+  "manifest_version": 3,
+
+  "action": {
+    "default_popup": "dist/index.html",
+    "default_icon": "public/image.png"
+  },
+	"background": {
+		"service_worker": "dist/background/index.js"
+	},
+	"permissions": ["scripting", "activeTab"]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "description": "Simple browser extension for focus 🎯",
+  "main": "popup.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chrome-types": "^0.1.345",
+    "rsync": "^0.6.1",
+    "tsx": "^4.19.3"
+  },
+  "scripts": {
+  "clean": "rimraf dist",
+  "compile": "npx tsc",
+  "copy-assets": "rsync  -av --exclude 'tsconfig.json' --exclude 'src' --exclude 'dist' ./ dist/",
+  "build": "npm run clean && npm run compile && npm run copy-assets"
+	},
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2"
+  }
+}
