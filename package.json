@@ -14,7 +14,7 @@
   "scripts": {
   "clean": "rimraf dist",
   "compile": "npx tsc",
-  "copy-assets": "rsync  -av --exclude 'tsconfig.json' --exclude 'src' --exclude 'dist' ./ dist/",
+	"copy-assets": "rsync -av --include='index.html' --include='index.css' --include='image.png' --include='Poppins.ttf' --include='manifest.json' --exclude='*' ./ ./dist",
   "build": "npm run clean && npm run compile && npm run copy-assets"
 	},
   "devDependencies": {

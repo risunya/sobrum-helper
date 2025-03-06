@@ -1,6 +1,55 @@
 <html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
   <body>
-    <h1>Hello Extensions</h1>
+    <div class="heading">
+			<img src="./image.png" class="heading-image">
+			Sobrum Helper</div>
+		<div class="week-panel">
+      <div class="day">Mon</div>
+      <div class="day">Tue</div>
+      <div class="day">Wed</div>
+      <div class="day">Thu</div>
+      <div class="day">Fri</div>
+      <div class="day">Sat</div>
+      <div class="day">Sun</div>
+    </div>
+		<!--<div class="panel">panel 2 (time)</div>-->
+
+		<div class="switch-container">
+			<div class="switch-box">	
+				<div>Autoclose distraction tab</div>
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+				<div class="switch-box">
+				<div>Redirect to sobrum.com</div>
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+		
+
+		<div class="stats-box">
+			<div class="stats">
+				<div class="stats-heading">1</div>
+				<div class="stats-subheading">today</div>
+				<div class="stats-bar"></div>
+				<div class="stats-counter">10 minutes saved</div>
+			</div>
+			<div class="stats">
+				<div class="stats-heading">104</div>
+				<div class="stats-subheading">in total</div>
+				<div class="stats-bar"></div>
+				<div class="stats-counter">17 hours saved</div>
+			</div>
+		</div>
+
     <script src="popup/index.js"></script>
   </body>
 </html>
