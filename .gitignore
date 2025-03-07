@@ -18,6 +18,7 @@ pids
 node_modules/
 jspm_packages/
 
+tsconfig.json
 *.tsbuildinfo
 
 .npm
