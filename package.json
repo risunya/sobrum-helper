@@ -8,15 +8,15 @@
   "license": "ISC",
   "dependencies": {
     "chrome-types": "^0.1.345",
-    "rsync": "^0.6.1",
+    "copyfiles": "^2.4.1",
     "tsx": "^4.19.3"
   },
   "scripts": {
-  "clean": "rimraf dist",
-  "compile": "npx tsc",
-	"copy-assets": "rsync -av --include='index.html' --include='index.css' --include='image.png' --include='Poppins.ttf' --include='manifest.json' --exclude='*' ./ ./dist",
-  "build": "npm run clean && npm run compile && npm run copy-assets"
-	},
+    "clean": "rimraf dist",
+    "compile": "npx tsc",
+    "copy-assets": "copyfiles *.css *.png *.html *.ttf src/manifest.json ./dist --exclude='./*.json' -f",
+    "build": "npm run clean && npm run compile && npm run copy-assets"
+  },
   "devDependencies": {
     "rimraf": "^6.0.1",
     "typescript": "^5.8.2"

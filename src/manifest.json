@@ -11,7 +11,7 @@
 		"128": "image.png"
 	},
 	"background": {
-		"service_worker": "src/background/index.ts"
+		"service_worker": "background/index.js"
 	},
 	"permissions": ["scripting", "activeTab"]
 }	
